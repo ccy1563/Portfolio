@@ -220,7 +220,7 @@
 
 .brand-span {
   font-size: 14px;
-  color: #c18f59; }
+  color: #aaaaaa; }
 
 .brand-button {
   display: inline-block;
@@ -228,7 +228,7 @@
   font-size: 11px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #c18f59;
+  color: #aaaaaa;
   border: 1px solid #fff;
   transition: 0.3s ease; }
   .brand-button:hover, .brand-button:focus {
@@ -296,8 +296,8 @@
 .span-arrow {
   padding: 10px 15px;
   cursor: pointer;
-  color: #c18f59;
-  border: 1px solid #c18f59;
+  color: #aaaaaa;
+  border: 1px solid #aaaaaa;
   border-radius: 50%;
   transition: 0.3s ease; }
   .span-arrow:hover {
@@ -330,7 +330,7 @@
     .portfolio-wrapper .portfolio__name span {
       font-size: 90px;
       line-height: 75px;
-      color: #c18f59;
+      color: #aaaaaa;
       font-family: "Calisto-MT-Bold"; }
       @media (max-width: 992px) {
         .portfolio-wrapper .portfolio__name span {
@@ -363,7 +363,7 @@
   .about-me__text p {
     margin-bottom: 35px;
     line-height: 24px;
-    color: #c18f59; }
+    color: #aaaaaa; }
     .about-me__text p span {
       font-size: 48px;
       color: #fff; }
@@ -375,7 +375,7 @@
   .about-me__text h4 {
     margin-bottom: 7px;
     font-size: 25px;
-    color: #c18f59; }
+    color: #aaaaaa; }
   .about-me__text .p-white {
     margin-bottom: 0;
     color: #fff; }
@@ -401,7 +401,7 @@
     .fh5co-books .books-brand-button .brand-button {
       font-size: 16px;
       text-transform: none;
-      border-color: #c18f59; }
+      border-color: #aaaaaa; }
       .fh5co-books .books-brand-button .brand-button:hover {
         border-color: #777; }
   @media (max-width: 1250px) {
@@ -450,7 +450,7 @@
     font-size: 18px;
     font-weight: 600;
     font-style: italic;
-    color: #c18f59; }
+    color: #aaaaaa; }
   @media (max-width: 1250px) {
     .single-book {
       margin-right: 10px; }
@@ -685,6 +685,7 @@
   padding: 63px 0;
   background-image: url("../images/social-bckg.jpg");
   background-size: cover;
+  height: 450px;
   background-position: center; }
   .fh5co-social::after {
     content: '';
@@ -693,7 +694,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #c18f59;
+    /* background-color: #c18f59; */
     opacity: 0.9; }
   .fh5co-social .site-container {
     position: relative;
@@ -703,11 +704,16 @@
       padding: 40px 0; } }
 
 .social {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  /* justify-content: space-between; */
   align-items: center; }
   .social h5 {
     font-size: 24px;
+    padding-bottom: 5%;
+    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
+    text-align: center;
     color: #fff; }
   @media (max-width: 620px) {
     .social {
@@ -719,6 +725,7 @@
   border-radius: 50%;
   padding: 13px 23px;
   margin-right: 10px;
+  /* align-items: center; */
   transition: 0.3s ease; }
   .social-icons a:hover {
     background-color: #777;
@@ -728,7 +735,14 @@
   position: absolute;
   left: 50%;
   top: 50%;
+  /* padding-left: 20%; */
   transform: translate(-50%, -50%); }
+
+.social-icons1 {
+    display: grid;
+    row-gap: 20%;
+    grid-template-columns: repeat(5, 1fr);
+}
 
 @media (max-width: 620px) {
   .social-icons {
@@ -866,10 +880,14 @@
 }
 
 .my-skills {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     padding: 0 2px;
     margin: 0 16px 16px 16px;
-        padding: 10px;
-    width: 33.333%;
+    padding: 10px;
+    width: 33.333%; */
+    display: grid;
+    row-gap: 20%;
+    grid-template-columns: repeat(5, 1fr);
+    color: #777;
 }
